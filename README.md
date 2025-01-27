@@ -1,4 +1,6 @@
-# CodeIgniter 4 Application Starter
+# CodeIgniter 4 Point of Sale
+
+A basic application emulating a point of sale running on PHP v8.3 and CodeIgniter v4.6.0
 
 ## What is CodeIgniter?
 
