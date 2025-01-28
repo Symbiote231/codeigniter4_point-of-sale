@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function getIndex(): string  // getIndex instead of index to leverage autoRoutesImproved feature
     {
-        return view('welcome_message');
+        return view('login');
     }
 }
