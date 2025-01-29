@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Point of Sale project using CodeIgniter v4.6.0 and PHP v8.3 and MySQL v8.0.37" />
+    <meta name="description" content="Point of Sale project using CodeIgniter v4.6.0 and PHP v8.3 and MySQL 8.0.37" />
     <meta name="author" content="RicardoGG_Symbiote231" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title><?= $title ?? 'My Application'; ?></title>
 </head>
 
-<body>
-    <div id="principalContainer" class="container-fluid text-center text-wrap text-break mt-5">
+<body class="d-flex flex-column min-vh-100">
+    <div id="principalContainer" class="container-fluid text-center text-wrap text-break flex-grow-1 d-flex align-items-center justify-content-center">
         <?= $this->renderSection('content'); ?>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <footer>
-        <div id="footerContainer" class="container-fluid text-center text-wrap text-break mt-5">
+
+    <footer class="mt-auto">
+        <div id="footerContainer" class="container-fluid text-center text-wrap text-break">
             <h6 class="lh-base">
                 All rights reserved @2025
                 </br>
@@ -24,6 +24,26 @@
             </h6>
         </div>
     </footer>
+
+    <script>
+        // Wait until the DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the login form element
+            var form = document.getElementById('loginForm');
+
+            // When the form is submitted, check the validity of the form
+            form.addEventListener('submit', function(event) {
+                // Prevent form submission if the form is invalid
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                // Add the 'was-validated' class to the form to show the feedback
+                form.classList.add('was-validated');
+            }, false);
+        });
+    </script>
 </body>
 
 </html>
