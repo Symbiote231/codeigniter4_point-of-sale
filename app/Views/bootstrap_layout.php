@@ -24,26 +24,6 @@
             </h6>
         </div>
     </footer>
-
-    <script>
-        // Wait until the DOM is ready
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the login form element
-            var form = document.getElementById('loginForm');
-
-            // When the form is submitted, check the validity of the form
-            form.addEventListener('submit', function(event) {
-                // Prevent form submission if the form is invalid
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-
-                // Add the 'was-validated' class to the form to show the feedback
-                form.classList.add('was-validated');
-            }, false);
-        });
-    </script>
 </body>
 
 </html>
