@@ -1,6 +1,6 @@
 # CodeIgniter 4 Point of Sale
 
-A basic application emulating a point of sale running on PHP v8.3 and CodeIgniter v4.6.0
+A basic application emulating a point of sale running on CodeIgniter v4.6.0 framework using PHP v8.3 and MySQL v8.0.37
 
 ## What is CodeIgniter?
 
