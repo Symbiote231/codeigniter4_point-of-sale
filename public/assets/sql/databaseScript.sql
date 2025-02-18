@@ -40,6 +40,7 @@ CALL CreateIndexIfNotExists();
 DROP PROCEDURE IF EXISTS CreateIndexIfNotExists;
 
 -- Insert admin user into the users table
+-- Password can be genrated with: php -r "echo password_hash('123456', PASSWORD_DEFAULT);"
 INSERT INTO users (username, password, name, email)
 VALUES ('admin', '$2y$10$hashedpasswordhere', 'Admin User', 'admin@example.com');
 
